@@ -1,73 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir Boudidah | IT Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amir Boudidah's Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="header">
-        <img src="assets/amir-photo.jpg" alt="Amir's Photo" class="profile-photo">
-        <h1>Amir Boudidah</h1>
-        <p>IT Engineer | Web & Mobile Developer | Game Developer</p>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:amirboudidah@gmail.com">amirboudidah@gmail.com</a></p>
-            <p>Phone: +216 90322256</p>
-            <p><a href="http://www.linkedin.com/in/amir-boudidah-0b6474299" target="_blank">LinkedIn</a> | <a href="https://gitlab.com/amir.boudidah" target="_blank">GitLab</a> | <a href="https://github.com/boudidahamir" target="_blank">GitHub</a></p>
+    <header class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <img src="assets/profile.jpg" alt="Amir Boudidah's Photo" class="profile-photo rounded-circle" />
+            <h1>Amir Boudidah</h1>
+            <p class="font-italic">IT Engineer</p>
+            <p>
+                <a href="mailto:amirboudidah@gmail.com" class="text-white">amirboudidah@gmail.com</a> |
+                <a href="tel:+21690322256" class="text-white">+216 90322256</a>
+            </p>
+            <p>
+                <a href="https://github.com/boudidahamir" class="text-white">GitHub</a> |
+                <a href="https://gitlab.com/amir.boudidah" class="text-white">GitLab</a> |
+                <a href="https://www.linkedin.com/in/amir-boudidah-0b6474299" class="text-white">LinkedIn</a>
+            </p>
+            <p class="mt-3">
+                Experienced IT professional with skills in web design, desktop apps, networking, game development, and database management. 
+                Strong technical and interpersonal skills. Passionate about using technology to benefit organizations and eager to tackle challenges.
+            </p>
         </div>
     </header>
+    
+    <!-- Portfolio Section -->
+    <section class="portfolio py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Portfolio</h2>
 
-    <section class="about-section">
-        <h2>About Me</h2>
-        <p>
-            Hello! I’m Amir, an experienced IT engineer with a passion for creating innovative solutions in web development, game development, and more. 
-            With a diverse skill set ranging from Unity game design to database management and backend programming, I enjoy solving complex challenges 
-            and continuously learning the latest technologies.
-        </p>
-    </section>
-
-    <section class="portfolio-section">
-        <h2>Portfolio</h2>
-        <div class="portfolio-items">
-            <div class="portfolio-item">
-                <img src="assets/project1-image.jpg" alt="Real Estate App Image" class="portfolio-image">
-                <h3>Real Estate Desktop App</h3>
-                <p>A user-friendly desktop application for real estate agents, built using the QT framework with C++.</p>
-                <button class="toggle-button">View More</button>
-                <div class="dropdown-content">
-                    <img src="assets/project1-detail1.jpg" alt="Screenshot 1" class="portfolio-detail">
-                    <img src="assets/project1-detail2.jpg" alt="Screenshot 2" class="portfolio-detail">
-                    <video controls class="portfolio-detail">
-                        <source src="assets/project1-demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+            <!-- Project 1 -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#project1" aria-expanded="false" aria-controls="project1">
+                        Real Estate Agency Desktop Application
+                    </button>
+                </div>
+                <div id="project1" class="collapse">
+                    <div class="card-body">
+                        <p>Engineered a user-friendly application using QT framework and C++.</p>
+                        <a href="https://github.com/amirboudidah/real-estate-app" class="btn btn-secondary">GitHub Repo</a>
+                        <div class="mt-3">
+                            <img src="assets/real_estate_app_1.png" alt="Real Estate App Screenshot 1" class="img-fluid" />
+                            <video src="assets/real_estate_app_demo.mp4" class="mt-2 w-100" controls></video>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="portfolio-item">
-                <img src="assets/project2-image.jpg" alt="E-commerce Website Image" class="portfolio-image">
-                <h3>E-commerce Website</h3>
-                <p>Developed an e-commerce website using JSF/EJB technology for efficient design and user engagement.</p>
-                <button class="toggle-button">View More</button>
-                <div class="dropdown-content">
-                    <img src="assets/project2-detail1.jpg" alt="Screenshot 1" class="portfolio-detail">
-                    <img src="assets/project2-detail2.jpg" alt="Screenshot 2" class="portfolio-detail">
-                    <video controls class="portfolio-detail">
-                        <source src="assets/project2-demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+            <!-- Project 2 -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#project2" aria-expanded="false" aria-controls="project2">
+                        E-Commerce Website
+                    </button>
+                </div>
+                <div id="project2" class="collapse">
+                    <div class="card-body">
+                        <p>Developed an e-commerce website using JSF/EJB technology with a focus on design and development.</p>
+                        <a href="https://github.com/amirboudidah/e-commerce-website" class="btn btn-secondary">GitHub Repo</a>
+                        <div class="mt-3">
+                            <img src="assets/e_commerce_website_1.png" alt="E-Commerce Website Screenshot" class="img-fluid" />
+                            <video src="assets/e_commerce_website_demo.mp4" class="mt-2 w-100" controls></video>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Add more portfolio items here with similar structure -->
+            <!-- Project 3 -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#project3" aria-expanded="false" aria-controls="project3">
+                        Online Library Applications
+                    </button>
+                </div>
+                <div id="project3" class="collapse">
+                    <div class="card-body">
+                        <p>Designed and developed web, desktop, and mobile applications for an online library using Symfony4, CodeNameOne, and JavaFX frameworks.</p>
+                        <a href="https://github.com/amirboudidah/online-library" class="btn btn-secondary">GitHub Repo</a>
+                        <div class="mt-3">
+                            <img src="assets/online_library_1.png" alt="Online Library Screenshot" class="img-fluid" />
+                            <video src="assets/online_library_demo.mp4" class="mt-2 w-100" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#project4" aria-expanded="false" aria-controls="project4">
+                        Unity Project with Photon PUN 2
+                    </button>
+                </div>
+                <div id="project4" class="collapse">
+                    <div class="card-body">
+                        <p>Implemented functionality for a button that searches for available rooms and creates one if none are found, and developed a lobby management system using Photon PUN 2 in Unity.</p>
+                        <a href="https://github.com/amirboudidah/unity-photon-pun" class="btn btn-secondary">GitHub Repo</a>
+                        <div class="mt-3">
+                            <img src="assets/unity_photon_pun_1.png" alt="Unity Photon PUN Screenshot" class="img-fluid" />
+                            <video src="assets/unity_photon_pun_demo.mp4" class="mt-2 w-100" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#project5" aria-expanded="false" aria-controls="project5">
+                        Capture The Flag Game
+                    </button>
+                </div>
+                <div id="project5" class="collapse">
+                    <div class="card-body">
+                        <p>Developed a Capture The Flag game in Unity with player data management including respawn time, round wins, and start position using Photon PUN 2.</p>
+                        <a href="https://github.com/amirboudidah/capture-the-flag" class="btn btn-secondary">GitHub Repo</a>
+                        <div class="mt-3">
+                            <img src="assets/capture_the_flag_1.png" alt="Capture The Flag Screenshot" class="img-fluid" />
+                            <video src="assets/capture_the_flag_demo.mp4" class="mt-2 w-100" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#project6" aria-expanded="false" aria-controls="project6">
+                        Goblin Character in Unity
+                    </button>
+                </div>
+                <div id="project6" class="collapse">
+                    <div class="card-body">
+                        <p>Implemented a goblin character in Unity that checks for the nearest player, sets the target, and gets destroyed after 10 seconds if no target is found or if it is far from the target.</p>
+                        <a href="https://github.com/amirboudidah/goblin-character" class="btn btn-secondary">GitHub Repo</a>
+                        <div class="mt-3">
+                            <img src="assets/goblin_character_1.png" alt="Goblin Character Screenshot" class="img-fluid" />
+                            <video src="assets/goblin_character_demo.mp4" class="mt-2 w-100" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#project7" aria-expanded="false" aria-controls="project7">
+                        Swinging Object in Unity
+                    </button>
+                </div>
+                <div id="project7" class="collapse">
+                    <div class="card-body">
+                        <p>Created functionality for an object to swing with a script that changes the speed randomly from a specified range every 2 seconds.</p>
+                        <a href="https://github.com/amirboudidah/swinging-object" class="btn btn-secondary">GitHub Repo</a>
+                        <div class="mt-3">
+                            <img src="assets/swinging_object_1.png" alt="Swinging Object Screenshot" class="img-fluid" />
+                            <video src="assets/swinging_object_demo.mp4" class="mt-2 w-100" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#project8" aria-expanded="false" aria-controls="project8">
+                        Arrow Spawning in Unity
+                    </button>
+                </div>
+                <div id="project8" class="collapse">
+                    <div class="card-body">
+                        <p>Developed functionality for spawning arrows that move in one direction, get destroyed upon collision, and cause damage if they hit the player.</p>
+                        <a href="https://github.com/amirboudidah/arrow-spawning" class="btn btn-secondary">GitHub Repo</a>
+                        <div class="mt-3">
+                            <img src="assets/arrow_spawning_1.png" alt="Arrow Spawning Screenshot" class="img-fluid" />
+                            <video src="assets/arrow_spawning_demo.mp4" class="mt-2 w-100" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#project9" aria-expanded="false" aria-controls="project9">
+                        Ingredient Selection and Order Management
+                    </button>
+                </div>
+                <div id="project9" class="collapse">
+                    <div class="card-body">
+                        <p>Built a C# program for ingredient selection and order management with classifications such as type, max amount, layer, and primary status.</p>
+                        <a href="https://github.com/amirboudidah/ingredient-order-management" class="btn btn-secondary">GitHub Repo</a>
+                        <div class="mt-3">
+                            <img src="assets/ingredient_order_management_1.png" alt="Ingredient Selection Screenshot" class="img-fluid" />
+                            <video src="assets/ingredient_order_management_demo.mp4" class="mt-2 w-100" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#project10" aria-expanded="false" aria-controls="project10">
+                        Fraud Detection System
+                    </button>
+                </div>
+                <div id="project10" class="collapse">
+                    <div class="card-body">
+                        <p>Developed a fraud detection system using a dataset with various financial attributes to identify fraudulent activities.</p>
+                        <a href="https://github.com/amirboudidah/fraud-detection" class="btn btn-secondary">GitHub Repo</a>
+                        <div class="mt-3">
+                            <img src="assets/fraud_detection_1.png" alt="Fraud Detection Screenshot" class="img-fluid" />
+                            <video src="assets/fraud_detection_demo.mp4" class="mt-2 w-100" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
+    <!-- Experience Section -->
+    <section class="experience py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Experience</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h3>IT Engineer at Dopawin</h3>
+                    <p>Developed e-commerce-related games and solutions for gamified ads during my internship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section class="education py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Education</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h3>Computer Science Degree</h3>
+                    <p>Graduated with honors in Computer Science from XYZ University.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section class="certifications py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Certifications</h2>
 
-    <footer class="footer">
-        <p>© 2024 Amir Boudidah | Connect with me on <a href="http://www.linkedin.com/in/amir-boudidah-0b6474299">LinkedIn</a></p>
-    </footer>
+            <!-- Certification 1 -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#certification1" aria-expanded="false" aria-controls="certification1">
+                        Certification in Cybersecurity
+                    </button>
+                </div>
+                <div id="certification1" class="collapse">
+                    <div class="card-body">
+                        <p>Certification received from XYZ Institute in Cybersecurity, validating skills and knowledge in securing information systems.</p>
+                        <div class="media mt-3">
+                            <img src="assets/cybersecurity_certificate.png" alt="Cybersecurity Certificate" />
+                        </div>
+                        <a href="https://example.com/cybersecurity-certification" class="btn btn-secondary" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-    <script src="scripts.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
